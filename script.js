@@ -10,6 +10,21 @@ function quest(txt, callback) {
 }
 
 function menu() {
-    quest("Chose a option",)
+    showmenu();
+
+    quest("Choose a option", (op) => {
+        switch (op) {
+            case '1':
+                registerbook();
+                break;
+            case '2':
+                listbooks();
+                break;
+            case '3':
+                editbooks();
+                break;
+        }
+    })
 }
 
+function showmenu() {}
